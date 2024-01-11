@@ -4,13 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
 </head>
 
 <body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.js"></script>
-<script src="app.js"></script>
+  <div id="container-fluid">
+    <div class="row p-3 justify-content-center">
+      <form id="searchForm">
+        <input class="input" type="text" id="searchInput">
+        <button class="btn">Search for GIF</button>
+      </form>
+      <button class="btn btn-danger" id="deleteAll">DELETE ALL</button>
+    </div>
+    <div class="row" id="gifArea"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
